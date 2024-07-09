@@ -1,0 +1,75 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+/* 상단 */
+.header{
+    width: 100%;
+    height: 327px;
+    background-color: aqua;
+}
+
+
+/* 네비게이션 */
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #f8e096;
+}
+header .nav .navy{
+    display: flex;
+    position: relative;
+}
+header .nav .navy> li a {
+    color: #866037;
+    padding: 14px 16px;
+}
+
+/* 로고 */
+.logo img{
+    width: 142px;
+    height: 167px;
+    margin : 0px auto;
+    margin-top: 90px;
+    display: block;
+    
+}
+
+
+/* 한/영 */
+.word{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.word-list{
+    position: absolute;
+    top: 20px;
+    left: 23px;
+}
+/* 로그인/회원가입 */
+
+/* 이미지 슬라이드 */
+
+
+/* 핸즈 시그니처 메뉴 */
+
+
+/* 핸즈 푸드메뉴 */
+
+
+/* 핸즈 시즌메뉴 */
+
+
+/* 핸즈 뉴핸즈 */
+
+
+/* 푸터 */
