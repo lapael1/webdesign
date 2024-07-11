@@ -111,18 +111,22 @@ a{
 /* 시그니처 메뉴 */
 .foodwrap{
     max-width: 1920px;
+    margin-top: 100px;
 }
 .sigtxt,.foodtxt,.seasontxt{
    text-align: center;
-   margin-top: 50px;
+   
+   margin-top: 150px;
 }
 .sig,.fd,.season1{
     color: #9b0505;
     /* font-weight: bold; */
     font-weight: 600;
+    
 }
 .sig2,.fd2,.season2{
 font-size: 18px;
+margin-bottom: 30px
 }
 .sigimg,.foodimg,.seasonimg{
     display: flex;
@@ -145,6 +149,7 @@ font-size: 18px;
 /* 뉴핸즈 */
 .newhandswrap{
     max-width: 1920px;
+    margin-top: 100px;
 }
 .newhandsleft{
     float: left;
@@ -172,19 +177,92 @@ margin-top: 30px;
 }
 .newhandsimg{
     display: flex;
+    position: relative;
 }
 .newhandsimg li a{
     padding: 10px;
-    
+    position: relative;
     
 }
 .newhandsright .newhandsimg li:first-child::before{
     content: "CLASSIC";
-    
+    position: absolute;
+    bottom: -20px;
+    left: 9px;
+    color: #575757;
 }
 .newhandsright .newhandsimg li:nth-child(2)::before{
     content: "FLAGSHIP STORE";
+    position: absolute;
+    bottom: -20px;
+    left: 24.5%;
+    color: #575757;
+
 }
 .newhandsright .newhandsimg li:last-child::before{
     content: "ARCHIN";
+    position: absolute;
+    bottom: -20px;
+    left: 48%;
+    color: #575757;
+
+}
+
+/* 푸터 */
+.footer{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 300px
+}
+.footer_top{
+    position: relative;
+    display: block;
+    background-color: #fff7e0;
+}
+.footer_topbar{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.footer_topbar li a{
+    padding: 0px 40px;
+    color: #5e3819;
+    font-size: 16px;
+}
+
+/* 푸터하단 */
+.footerbot{
+    background-color: #726357;
+    width: 1920px;
+    width: 100%;
+    height: 200px;
+}
+.footerLeft{
+    width: 900px;
+}
+.footerLeft p{
+    
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0px 30px;
+    margin-left: 200px;
+}
+.footerRight{
+    width: 1020px;
+}
+
+.ftrightimg{
+    
+}
+.ftrightimg li a{
+    gap: ;
+}
+.ftrightimg li a img{
+    
+    
+    float: right;
+
 }
