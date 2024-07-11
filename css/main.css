@@ -118,10 +118,11 @@ a{
 }
 .sig,.fd,.season1{
     color: #9b0505;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 600;
 }
-.sig2{
-
+.sig2,.fd2,.season2{
+font-size: 18px;
 }
 .sigimg,.foodimg,.seasonimg{
     display: flex;
@@ -154,8 +155,12 @@ a{
     color: #9b0505;
 }
 .newhandstxt span{
-    border: 1px solid #;
-
+    display: inline-block;
+    border: 1px solid #726357;
+color: #726357;
+padding: 10px 20px;
+border-radius: 5px;
+margin-top: 30px;
 }
 .newhandstxt{
     margin-left: 200px;
@@ -172,4 +177,14 @@ a{
     padding: 10px;
     
     
+}
+.newhandsright .newhandsimg li:first-child::before{
+    content: "CLASSIC";
+    
+}
+.newhandsright .newhandsimg li:nth-child(2)::before{
+    content: "FLAGSHIP STORE";
+}
+.newhandsright .newhandsimg li:last-child::before{
+    content: "ARCHIN";
 }
