@@ -5,37 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO 적용 -->
-    <meta http-equiv="Description" name="Description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다.">
-    <meta name="keywords" content="핸즈커피,프랜차이즈">
+    <meta http-equiv="Description" name="Description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다." />
+    <meta name="keywords" content="핸즈커피,프랜차이즈" />
     />
     <meta property="og:title" content="핸즈커피" />
-    <meta property="og:description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다.">
-    <meta
-      property="og:image"
-      content="https://lapael1.github.io/webdesign/images/handslogo.jpg"
-    />
+    <meta property="og:description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다." />
+    <meta property="og:image" content="https://lapael1.github.io/webdesign/images/handslogo.jpg" />
     <meta property="og:url" content="https://lapael1.github.io/webdesign/" />
     <meta property="og:site_name" content="핸즈커피" />
     <meta property="og:type" content="website" />
-    
+
     <!-- 파비콘 적용 -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
     <link rel="manifest" href="images/favicon/site.webmanifest" />
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -43,15 +26,14 @@
     <!-- <link rel="icon" href="images/handscookies.png"> -->
 
     <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
+
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/main.css" />
 
+    
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- js 적용 -->
     <script src="js/html5shiv.js"></script>
@@ -61,35 +43,89 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <title>핸즈커피</title>
+    <!-- 배너스타일 -->
+     <style>
+      html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #ffffff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-pagination-bullet{
+      width: 110px;
+      height: 10px;
+      background: #fff;
+      border-radius: 0px;
+      opacity: 100;
+    }
+    .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, #fdd862);
+    width: 110px;
+    height: 10px;
+    border-radius: 0px;}
+
+
+     </style>
   </head>
   <body>
+    
+    
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
         <div class="header-inner">
-       
-        <!-- 상단 왼쪽 -->
-         <div class="topLeft">
+          <!-- 상단 왼쪽 -->
+          <div class="topLeft">
             <ul class="language">
-                <li><a href="#"><b>KR</b></a></li>
-                <li><a href="#">ENG</a></li>
+              <li>
+                <a href="#"><b>KR</b></a>
+              </li>
+              <li><a href="#">ENG</a></li>
             </ul>
-         </div>
+          </div>
           <!-- 로고 -->
           <div class="toplogo">
-            <img src="images/handslogo.jpg" alt="logo">
-         </div>
-         <!-- 상단 오른쪽 -->
+            <img src="images/handslogo.jpg" alt="logo" />
+          </div>
+          <!-- 상단 오른쪽 -->
           <div class="topRight">
             <ul class="login">
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">SIGN-UP</a></li>
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">SIGN-UP</a></li>
             </ul>
           </div>
         </div>
         <!-- 네비게이션 -->
-         <nav class="nav">
+        <nav class="nav">
           <ul class="topmenu">
             <li><a href="#">COMPANY</a></li>
             <li><a href="#">MENU</a></li>
@@ -99,9 +135,9 @@
             <li><a href="#">STORE</a></li>
             <li><a href="#">HANDSMALL</a></li>
           </ul>
-          </nav>
-            
-              <!-- <li>
+        </nav>
+
+        <!-- <li>
                 <a href="#">COMPANY</a>
                 <ul class="depth2">
                   <li><a href="#">- ABOUT</a></li>
@@ -159,86 +195,149 @@
                 </ul>
               </li> -->
       </header>
-    
-    <!-- 배너 구역 -->
-     <div class="banner">
-        <a href="#"><img src="images/banner img (1).png" alt=""></a>
-        <div class="banner_bar">
-          <ul class="banner_slide">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-     </div>
-     <!-- 시그니처 메뉴 -->
-      <div class="foodwrap">
-      <div class="signauture">
-        <div class="sigtxt">
+<!-- Swiper -->
+      <!-- 배너 구역 -->
+      <div class="swiper bannerswiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/banner img (1).png" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"></a><img src="images/banner4.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"></a><img src="images/banner5.png" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <script>
+            
+            
+          </script>
+      <!-- 시그니처 메뉴 -->
+      <div class="sigtxt">
         <h1 class="sig">SIGNATURE MENU</h1>
         <h3 class="sig2">핸즈의 시그니처 메뉴</h3>
-        </div>
-        <!-- 시그니쳐 이미지 -->
-        <div class="sigimg">
-          <ul class="sigimgSlide">
-            <li><a href="#"><img src="images/longblack.png" alt=""></a></li>
-            <li><a href="#"><img src="images/capucino.png" alt=""></a></li>
-            <li><a href="#"><img src="images/soylatte.png" alt=""></a></li>
-            <li><a href="#"><img src="images/dutchmelange.png" alt=""></a></li>
-        </div>
       </div>
+      <!-- 시그니처 슬라이드 시작 -->
+      <section class="promotion">
+        <div class="inner">
+          <!-- 스와이퍼 전체영역 -->
+           <div class="promotion-slide">
+          <!-- navigation -->
+        <button class="sw-bt sw-prev">이전</button>
+        <button class="sw-bt sw-next">다음</button>
 
-      <!-- 푸드 메뉴 -->
-       <div class="food">
-        <div class="foodtxt">
-          <h1 class="fd">FOOD MENU</h1>
-          <h3 class="fd2">핸즈커피와 함께 즐길 수 있는 디저트 메뉴</h3>
-        </div>
-        <!-- 푸드 이미지 -->
-         <div class="foodimg">
-          <ul class="foodimgSlide">
-            <li><a href="#"><img src="images/chobawaf.png" alt=""></a></li>
-            <li><a href="#"><img src="images/hagendz waf.png" alt=""></a></li>
-            <li><a href="#"><img src="images/grenala waf.png" alt=""></a></li>
-            <li><a href="#"><img src="images/bluberycz waf.png" alt=""></a></li>
-          </ul>
-         </div>
-       </div>
-       <!-- 시즌 메뉴 -->
+          <!-- 시그니쳐 이미지 스와이퍼 -->
+          <div class="swiper sw-promotion">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/longblack.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/capucino.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/soylatte.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/dutchmelange.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/vainlate.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/milktea_web.png" alt="" /></a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </section>
+        
+        <!-- 푸드 메뉴 -->
+        
+          <div class="foodtxt">
+            <h1 class="fd">FOOD MENU</h1>
+            <h3 class="fd2">핸즈커피와 함께 즐길 수 있는 디저트 메뉴</h3>
+          </div>
+          <!-- 푸드메뉴 슬라이드 시작 -->
+      <section class="promotion">
+        <div class="inner">
+          <!-- 스와이퍼 전체영역 -->
+           <div class="promotion-slide">
+          <!-- navigation -->
+        <button class="sw-bt sw-prev">이전</button>
+        <button class="sw-bt sw-next">다음</button>
+
+          <!-- 시그니쳐 이미지 스와이퍼 -->
+          <div class="swiper sw-promotion">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/chobawaf.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/hagendz waf.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/grenala waf.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/bluberycz waf.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/handscookies.png" alt="" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/raspberry.png" alt="" /></a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </section>
+        <!-- 시즌 메뉴 -->
         <div class="season">
           <div class="seasontxt">
             <h1 class="season1">SEASON MENU</h1>
             <h3 class="season2">지금 꼭 즐겨야 하는 핸즈 시즌 메뉴</h3>
           </div>
           <!-- 시즌 메뉴 이미지 -->
-           <div class="seasonimg">
+          <div class="seasonimg">
             <ul class="seasonimgSlide">
-              <li><a href="#"><img src="images/peachsummer.png" alt=""></a></li>
-              <li><a href="#"><img src="images/peachsmoothie.png" alt=""></a></li>
+              <li>
+                <a href="#"><img src="images/peachsummer.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/peachsmoothie.png" alt="" /></a>
+              </li>
             </ul>
-           </div>
+          </div>
         </div>
-      </div>
+      </>
       <!-- 뉴 핸즈 -->
-       <div class="newhandswrap">
+      <div class="newhandswrap">
         <div class="newhandsleft">
-        <div class="newhandstxt">
-          <h1 class="newh1">NEW HANDS</h1>
-          <h3 class="newh3">새로운 핸즈커피 매장을 만나보세요.</h3>
-          <span>MORE</span>
+          <div class="newhandstxt">
+            <h1 class="newh1">NEW HANDS</h1>
+            <h3 class="newh3">새로운 핸즈커피 매장을 만나보세요.</h3>
+            <span>MORE</span>
+          </div>
         </div>
-       </div>
-       <!-- 뉴핸즈 이미지 -->
+        <!-- 뉴핸즈 이미지 -->
         <div class="newhandsright">
           <ul class="newhandsimg">
-            <li><a href="#"><img src="images/apsan 1.png" alt=""></a></li>
-            <li><a href="#"><img src="images/art 1.png" alt=""></a></li>
-            <li><a href="#"><img src="images/archin 1.png" alt=""></a></li>
+            <li>
+              <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/art 1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/archin 1.png" alt="" /></a>
+            </li>
           </ul>
         </div>
       </div>
       <!-- 푸터 -->
-       <div class="footer">
+      <div class="footer">
         <!-- 푸터탑 -->
         <div class="footer_top">
           <ul class="footer_topbar">
@@ -249,27 +348,36 @@
             <li><a href="#">핸즈점주전용</a></li>
           </ul>
         </div>
-       </div>
-       <!-- 푸터하단 -->
-        <div class="footerbot">
-          <!-- 푸터하단왼쪽 -->
-           <div class="footerLeft">
-            <p>상호명 : (주)지핸즈  |  주소 : 대구광역시 북구 도남길 61-9<br>
-              고객 문의 : 1600-3476 대표 메일 : MASTER@HANDSCOFEE.COM
-             </p><br>
-             <p>COPYRIGHTⓒ 2006 g hands Co., ltd.  All Rights Reserved.</p>
-           </div>
-           <!-- 푸터하단오른쪽 -->
-            <div class="footerRight">
-           <ul class="ftrightimg">
-            <li><a href="#"><img src="images/handsutubeicon.png" alt=""></a></li>
-            <li><a href="#"><img src="images/handsinstaicon.png" alt=""></a></li>
-            <li><a href="#"><img src="images/handsfaceicon.png" alt=""></a></li>
-            <li><a href="#"><img src="images/handsmallicon.png" alt=""></a></li>
-            
-           </ul>
-            </div>
+      </div>
+      <!-- 푸터하단 -->
+      <div class="footerbot">
+        <!-- 푸터하단왼쪽 -->
+        <div class="footerLeft">
+          <p class="info">
+            상호명 : (주)지핸즈 | 주소 : 대구광역시 북구 도남길 61-9<br />
+            고객 문의 : 1600-3476 대표 메일 : MASTER@HANDSCOFEE.COM
+          </p>
+          <br />
+          <p class="copy">COPYRIGHTⓒ 2006 g hands Co., ltd. All Rights Reserved.</p>
         </div>
+        <!-- 푸터하단오른쪽 -->
+        <div class="footerRight">
+          <ul class="ftrightimg">
+            <li>
+              <a href="#"><img src="images/handsutubeicon.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/handsinstaicon.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/handsfaceicon.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/handsmallicon.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
