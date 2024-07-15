@@ -29,11 +29,19 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/signature.css">
+    <link rel="stylesheet" href="css/food.css">
     <link rel="stylesheet" href="css/main.css" />
 
     
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<!-- jquery 적용 -->
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/script.js"></script>
+
+
 
     <!-- js 적용 -->
     <script src="js/html5shiv.js"></script>
@@ -45,54 +53,52 @@
     <title>핸즈커피</title>
     <!-- 배너스타일 -->
      <style>
-      html,
-    body {
-      position: relative;
-      height: 100%;
-    }
+     html,
+body {
+  position: relative;
+  height: 100%;
+}
 
-    body {
-      background: #ffffff;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
 
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-pagination-bullet{
-      width: 110px;
-      height: 10px;
-      background: #fff;
-      border-radius: 0px;
-      opacity: 100;
-    }
-    .swiper-pagination-bullet-active {
-    background: var(--swiper-pagination-color, #fdd862);
-    width: 110px;
-    height: 10px;
-    border-radius: 0px;}
-
-
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-bullet{
+width: 110px;
+height: 10px;
+border-radius: 0;
+background-color: #fff;
+}
+.swiper-pagination-bullet-active{
+width: 110px;
+height: 10px;
+background-color: #fdd862;
+}
      </style>
   </head>
   <body>
@@ -127,15 +133,58 @@
         <!-- 네비게이션 -->
         <nav class="nav">
           <ul class="topmenu">
-            <li><a href="#">COMPANY</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">SHARING</a></li>
-            <li><a href="#">FRANCHISE</a></li>
-            <li><a href="#">ACADEMY</a></li>
-            <li><a href="#">STORE</a></li>
+            <li class="top-bt"><a href="#">COMPANY</a>
+            <ul class="submenu">
+              <li><a href="#">- ABOUT</a></li>
+              <li><a href="#">- STORY</a></li>
+              <li><a href="#">- 핸즈 생각</a></li>
+              <li><a href="#">- RECRUIT</a></li>
+            </ul>
+          </li>
+            <li><a href="#">MENU</a>
+            <ul class="submenu">
+              <li><a href="#">- NEW MENU</a></li>
+              <li><a href="#">- HAND DRIP</a></li>
+              <li><a href="#">- SIGNATURE</a></li>
+            </ul>
+          </li>
+            <li><a href="#">SHARING</a>
+              <ul class="submenu">
+                <li><a href="#">- PROMOTION</a></li>
+                <li><a href="#">- NEWS</a></li>
+                <li><a href="#">- SIGNATURE</a></li>
+              </ul>
+            </li>
+            <li><a href="#">FRANCHISE</a>
+              <ul class="submenu">
+                <li><a href="#">- 창업 비용 및 절차</a></li>
+                <li><a href="#">- 가맹 상담 신청</a></li>
+                <li><a href="#">- FAQ</a></li>
+                <li><a href="#">- 핸즈는 다릅니다</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ACADEMY</a>
+              <ul class="submenu">
+                <li><a href="#">- 아카데미 소개</a></li>
+                <li><a href="#">- 커피 교육 과정</a></li>
+              </ul>
+            </li>
+            <li><a href="#">STORE</a>
+              <ul class="submenu">
+                <li><a href="#">- 매장 찾기</a></li>
+                <li><a href="#">- STORE TYPE</a></li>
+                <li><a href="#">- FLAGSHIP STORE</a></li>
+                <li><a href="#">- 오픈 예정점</a></li>
+              </ul>
+            </li>
             <li><a href="#">HANDSMALL</a></li>
           </ul>
         </nav>
+        <script>
+          $(document).ready(function(){
+  
+          })
+      </script>
 
         <!-- <li>
                 <a href="#">COMPANY</a>
@@ -197,78 +246,89 @@
       </header>
 <!-- Swiper -->
       <!-- 배너 구역 -->
-      <div class="swiper bannerswiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="images/banner img (1).png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"></a><img src="images/banner4.png" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"></a><img src="images/banner5.png" alt=""></a></div>
+          <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="images/banner img (1).png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"></a><img src="images/banner4.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="#"></a><img src="images/banner5.png" alt=""></a></div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <script>
-            
-            
-          </script>
       <!-- 시그니처 메뉴 -->
       <div class="sigtxt">
         <h1 class="sig">SIGNATURE MENU</h1>
         <h3 class="sig2">핸즈의 시그니처 메뉴</h3>
       </div>
       <!-- 시그니처 슬라이드 시작 -->
-      <section class="promotion">
-        <div class="inner">
+      <section class="signature">
+        <div class="signature_inner">
           <!-- 스와이퍼 전체영역 -->
-           <div class="promotion-slide">
+           <div class="signature-slide">
           <!-- navigation -->
         <button class="sw-bt sw-prev">이전</button>
         <button class="sw-bt sw-next">다음</button>
 
           <!-- 시그니쳐 이미지 스와이퍼 -->
-          <div class="swiper sw-promotion">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/longblack.png" alt="" /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/capucino.png" alt="" /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/soylatte.png" alt="" /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/dutchmelange.png" alt="" /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/vainlate.png" alt="" /></a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#"><img src="images/milktea_web.png" alt="" /></a>
-                </div>
-              </div>
+         <div class="swiper sw-signature">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/longblack.png" alt="롱블랙">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/capucino.png" alt="카푸치노">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/soylatte.png" alt="소이라떼">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/dutchmelange.png" alt="더치멜랑주">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/vainlate.png" alt="바닐라라떼">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="sig">
+                <img src="images/milktea_web.png" alt="밀크티">
+              </a>
+            </div>
+            
+          </div>
+         </div>
+            
               </div>
             </div>
           </div>
       </section>
         
         <!-- 푸드 메뉴 -->
-        
+        <div class="foodwrap">
           <div class="foodtxt">
             <h1 class="fd">FOOD MENU</h1>
             <h3 class="fd2">핸즈커피와 함께 즐길 수 있는 디저트 메뉴</h3>
           </div>
           <!-- 푸드메뉴 슬라이드 시작 -->
-      <section class="promotion">
-        <div class="inner">
+      <section class="food">
+        <div class="food_inner">
           <!-- 스와이퍼 전체영역 -->
-           <div class="promotion-slide">
+           <div class="food-slide">
           <!-- navigation -->
         <button class="sw-bt sw-prev">이전</button>
         <button class="sw-bt sw-next">다음</button>
 
           <!-- 시그니쳐 이미지 스와이퍼 -->
-          <div class="swiper sw-promotion">
+          <div class="swiper sw-food">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#"><img src="images/chobawaf.png" alt="" /></a>
@@ -287,6 +347,7 @@
                 </div>
                 <div class="swiper-slide">
                   <a href="#"><img src="images/raspberry.png" alt="" /></a>
+                </div>
                 </div>
               </div>
               </div>
@@ -378,6 +439,7 @@
           </ul>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>

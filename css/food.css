@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 푸드 css */
+.food_inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.food{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.foodtxt{
+    background-color: #fff;
+}
+.foodwrap{
+    background-color: #fff;
+}
+.food img{
+    width: 100%;
+    mix-blend-mode: multiply;
+    padding-left: 100px;
+}
