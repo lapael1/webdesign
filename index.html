@@ -53,46 +53,11 @@
     <title>핸즈커피</title>
     <!-- 배너스타일 -->
      <style>
-     html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-pagination-bullet{
+     .swiper-pagination-bullet{
 width: 110px;
 height: 10px;
 border-radius: 0;
-background-color: #fff;
+background-color: #979797;
 }
 .swiper-pagination-bullet-active{
 width: 110px;
@@ -115,7 +80,7 @@ background-color: #fdd862;
               <li>
                 <a href="#"><b>KR</b></a>
               </li>
-              <li><a href="#">ENG</a></li>
+              <li><a href="#" class="eng">ENG</a></li>
             </ul>
           </div>
           <!-- 로고 -->
@@ -331,22 +296,22 @@ background-color: #fdd862;
           <div class="swiper sw-food">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/chobawaf.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/chobawaf.png" alt="" /></a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/hagendz waf.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/hagendz waf.png" alt="" /></a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/grenala waf.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/grenala waf.png" alt="" /></a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/bluberycz waf.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/bluberycz waf.png" alt="" /></a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/handscookies.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/handscookies.png" alt="" /></a>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#"><img src="images/raspberry.png" alt="" /></a>
+                  <a href="#" class="foodi"><img src="images/raspberry.png" alt="" /></a>
                 </div>
                 </div>
               </div>
@@ -385,18 +350,61 @@ background-color: #fdd862;
         <!-- 뉴핸즈 이미지 -->
         <div class="newhandsright">
           <ul class="newhandsimg">
+        <div class="apsan-img">
             <li>
-              <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+              <a href="#" id="apsan">
+                <img src="images/apsan 1.png" alt="" /></a>
+            </li>
+          </div>
+          <div class="apsan-txt">
+            <span>앞산점</span>
+          </div>
+            <li>
+              <a href="#" id="art"><img src="images/art 1.png" alt="" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/art 1.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/archin 1.png" alt="" /></a>
+              <a href="#" id="archin"><img src="images/archin 1.png" alt="" /></a>
             </li>
           </ul>
         </div>
       </div>
+<!-- 카피 -->
+<!-- 앞산 -->
+ <div class="newhandswrap">
+<div class="imgwrap">
+  <div class="apsan-img">
+    <li>
+      <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+    </li>
+  </div>
+  <div class="txtwrap">
+    <span>앞산점</span>
+  </div>
+</div>
+
+<!-- 아트 -->
+<div class="imgwrap2">
+    <div class="art-img">
+      <li>
+        <a href="#"><img src="images/art 1.png" alt="" /></a>
+      </li>
+    </div>
+    <div class="txtwrap2">
+      <span>대구미술관점</span>
+    </div>
+  </div>
+
+  <!-- 아친 -->
+  <div class="imgwrap3">
+    <div class="apsan-img">
+      <li>
+        <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+      </li>
+    </div>
+    <div class="txtwrap">
+      <span>남구미IC점</span>
+    </div>
+  </div>
       <!-- 푸터 -->
       <div class="footer">
         <!-- 푸터탑 -->
@@ -410,6 +418,7 @@ background-color: #fdd862;
           </ul>
         </div>
       </div>
+    </div>
       <!-- 푸터하단 -->
       <div class="footerbot">
         <!-- 푸터하단왼쪽 -->
@@ -425,16 +434,16 @@ background-color: #fdd862;
         <div class="footerRight">
           <ul class="ftrightimg">
             <li>
-              <a href="#"><img src="images/handsutubeicon.png" alt="" /></a>
+              <a href="https://www.youtube.com/channel/UCycHJe6mK-yoWzTEDOndOPQ" target="_blank"><img src="images/handsutubeicon.png" alt="유튜브" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/handsinstaicon.png" alt="" /></a>
+              <a href="https://www.instagram.com/handscoffee/" target="_blank"><img src="images/handsinstaicon.png" alt="인스타" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/handsfaceicon.png" alt="" /></a>
+              <a href="https://www.facebook.com/handscoffee" target="_blank"><img src="images/handsfaceicon.png" alt="페이스북" /></a>
             </li>
             <li>
-              <a href="#"><img src="images/handsmallicon.png" alt="" /></a>
+              <a href="https://handscoffeemall.com/mall_new/" target="_blank"><img src="images/handsmallicon.png" alt="핸즈몰" /></a>
             </li>
           </ul>
         </div>

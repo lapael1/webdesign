@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+      body {
+        margin: 0 auto;
+      }
+
+      figure {
+        transition: opacity 0.2s;
+        position: relative;
+        margin: 0;
+        max-width: 20%;
+      }
+
+      figure img {
+        width: 100%;
+      }
+
+      figure figcaption {
+        color: #fff;
+        bottom: 70px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+
+      figure .gallery-img {
+        opacity: 1;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+      }
+
+      figure:hover .gallery-img {
+        background-color: #000;
+      }
+
+      figure:hover img {
+        transform: scale(1.1, 1.1);
+        transition: all 0.3s ease;
+        opacity: 0.15;
+        cursor: url("https://hcode.b-cdn.net/wp-content/themes/h-code/assets/images/icon-zoom-white.png"), pointer;
+      }
+
+      figure:hover figcaption {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+
+      .imgwrap {
+        transition: opacity 0.2s;
+        position: relative;
+        margin: 0;
+        max-width: 20%;
+      }
+      .imgwrap img {
+        width: 100%;
+      }
+      .imgwrap .txtwrap {
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+      }
+      .imgwrap .apsan-img{
+        opacity: 1;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+      }
+      .imgwrap:hover .apsan-img {
+        background-color: #000;
+      }
+      .imgwrap:hover img {
+        transform: scale(1.1, 1.1);
+        transition: all 0.3s ease;
+        opacity: 0.15;
+        cursor: pointer;}
+        .imgwrap:hover .txtwrap {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <figure>
+      <div class="gallery-img"><img src="https://hcode.themezaa.com/wp-content/uploads/2015/09/portfolio-img16.jpg.webp" /></div>
+
+      <figcaption>
+        <h3>Tailoring Interior</h3>
+
+        <p>Ajax popup - Style #2</p>
+      </figcaption>
+    </figure>
+<!-- 앞산 -->
+    <div class="imgwrap">
+      <div class="apsan-img">
+        <li>
+          <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+        </li>
+      </div>
+      <div class="txtwrap">
+        <span>앞산점</span>
+      </div>
+    </div>
+
+    <!-- 아트 -->
+    <div class="imgwrap2">
+        <div class="art-img">
+          <li>
+            <a href="#"><img src="images/art 1.png" alt="" /></a>
+          </li>
+        </div>
+        <div class="txtwrap2">
+          <span>대구미술관점</span>
+        </div>
+      </div>
+
+      <!-- 아친 -->
+      <div class="imgwrap">
+        <div class="apsan-img">
+          <li>
+            <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+          </li>
+        </div>
+        <div class="txtwrap">
+          <span>남구미IC점</span>
+        </div>
+      </div>
+  </body>
+</html>

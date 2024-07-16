@@ -1,6 +1,6 @@
 window.onload = function () {
   // swiper ================
-  // 프로모션 스와퍼기능
+  // 시그니처 스와이퍼기능
   const swSignature = new Swiper(".sw-signature", {
     slidesPerView: 1,
     spaceBetween: 12,
