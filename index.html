@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO 적용 -->
     <meta http-equiv="Description" name="Description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다." />
     <meta name="keywords" content="핸즈커피,프랜차이즈" />
-    />
+    
     <meta property="og:title" content="핸즈커피" />
     <meta property="og:description" content="맛있는 커피로 따뜻함을 나누는 스페셜티 핸드드립 커피 전문 브랜드 : 핸즈커피 공식 홈페이지입니다." />
     <meta property="og:image" content="https://lapael1.github.io/webdesign/images/handslogo.jpg" />
@@ -23,7 +24,7 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- <link rel="icon" href="images/handscookies.png"> -->
+    <link rel="icon" href="images/handscookies.png">
 
     <!-- css -->
 
@@ -40,7 +41,8 @@
 <!-- jquery 적용 -->
 <script src="js/jquery-1.12.3.js"></script>
 <script src="js/script.js"></script>
-
+<!-- 글꼴적용 -->
+<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
 
 
     <!-- js 적용 -->
@@ -53,11 +55,15 @@
     <title>핸즈커피</title>
     <!-- 배너스타일 -->
      <style>
+      body{
+        font-family: 'NanumGothic';
+      }
      .swiper-pagination-bullet{
 width: 110px;
 height: 10px;
 border-radius: 0;
-background-color: #979797;
+opacity: 1;
+background-color: #ffffff;
 }
 .swiper-pagination-bullet-active{
 width: 110px;
@@ -68,11 +74,15 @@ background-color: #fdd862;
   </head>
   <body>
     
-    
+    <!-- 탑버튼 -->
+     <div class="top-button">
+      <a href="#" class="top-btn" id="top-btn">
+        <img src="images/topbtn.png" alt="" id="top-btn-img"></a>
+     </div>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
-      <header class="header">
+      <header class="header" id="header">
         <div class="header-inner">
           <!-- 상단 왼쪽 -->
           <div class="topLeft">
@@ -85,7 +95,7 @@ background-color: #fdd862;
           </div>
           <!-- 로고 -->
           <div class="toplogo">
-            <img src="images/handslogo.jpg" alt="logo" />
+            <a href="#"><img src="images/handslogo.jpg" alt="logo"/></a>
           </div>
           <!-- 상단 오른쪽 -->
           <div class="topRight">
@@ -106,21 +116,21 @@ background-color: #fdd862;
               <li><a href="#">- RECRUIT</a></li>
             </ul>
           </li>
-            <li><a href="#">MENU</a>
+            <li class="top-bt"><a href="#">MENU</a>
             <ul class="submenu">
               <li><a href="#">- NEW MENU</a></li>
               <li><a href="#">- HAND DRIP</a></li>
               <li><a href="#">- SIGNATURE</a></li>
             </ul>
           </li>
-            <li><a href="#">SHARING</a>
+            <li class="top-bt"><a href="#">SHARING</a>
               <ul class="submenu">
                 <li><a href="#">- PROMOTION</a></li>
                 <li><a href="#">- NEWS</a></li>
                 <li><a href="#">- SIGNATURE</a></li>
               </ul>
             </li>
-            <li><a href="#">FRANCHISE</a>
+            <li class="top-bt"><a href="#">FRANCHISE</a>
               <ul class="submenu">
                 <li><a href="#">- 창업 비용 및 절차</a></li>
                 <li><a href="#">- 가맹 상담 신청</a></li>
@@ -128,13 +138,13 @@ background-color: #fdd862;
                 <li><a href="#">- 핸즈는 다릅니다</a></li>
               </ul>
             </li>
-            <li><a href="#">ACADEMY</a>
+            <li class="top-bt"><a href="#">ACADEMY</a>
               <ul class="submenu">
                 <li><a href="#">- 아카데미 소개</a></li>
                 <li><a href="#">- 커피 교육 과정</a></li>
               </ul>
             </li>
-            <li><a href="#">STORE</a>
+            <li class="top-bt"><a href="#">STORE</a>
               <ul class="submenu">
                 <li><a href="#">- 매장 찾기</a></li>
                 <li><a href="#">- STORE TYPE</a></li>
@@ -142,7 +152,7 @@ background-color: #fdd862;
                 <li><a href="#">- 오픈 예정점</a></li>
               </ul>
             </li>
-            <li><a href="#">HANDSMALL</a></li>
+            <li ><a href="#">HANDSMALL</a></li>
           </ul>
         </nav>
         <script>
@@ -151,73 +161,17 @@ background-color: #fdd862;
           })
       </script>
 
-        <!-- <li>
-                <a href="#">COMPANY</a>
-                <ul class="depth2">
-                  <li><a href="#">- ABOUT</a></li>
-                  <li><a href="#">- STORY</a></li>
-                  <li><a href="#">- 핸즈 생각</a></li>
-                  <li><a href="#">- RECRUIT</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">MENU</a>
-                <ul class="depth2">
-                  <li><a href="#">- NEW MENU</a></li>
-                  <li><a href="#">- HAND DRIP</a></li>
-                  <li><a href="#">- SIGNATURE</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">SHARING</a>
-                <ul class="depth2">
-                  <li><a href="#">- PROMOTION</a></li>
-                  <li><a href="#">- NEWS</a></li>
-                  <li><a href="#">- HANDS VIDEO</a></li>
-                  <li><a href="#">- NEWS LETTER</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">FRANCHISE</a>
-                <ul class="depth2">
-                  <li><a href="#">- 창업비용 및 절차</a></li>
-                  <li><a href="#">- 가맹 상담 신청</a></li>
-                  <li><a href="#">- FAQ</a></li>
-                  <li><a href="#">- 핸즈는 다릅니다</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">ACADEMY</a>
-                <ul class="depth2">
-                  <li><a href="#">- 아카데미 소개</a></li>
-                  <li><a href="#">- 커피 교육 과정</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">STORE</a>
-                <ul class="depth2">
-                  <li><a href="#">- 매장 찾기</a></li>
-                  <li><a href="#">- STORE TYPE</a></li>
-                  <li><a href="#">- FLAGSHIP STORE</a></li>
-                  <li><a href="#">- 오픈 예정점</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">HANDS MALL</a>
-                <ul class="depth2">
-        
-                </ul>
-              </li> -->
+
       </header>
 <!-- Swiper -->
       <!-- 배너 구역 -->
           <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="#"><img src="images/banner img (1).png" alt=""></a></div>
-              <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt=""></a></div>
-              <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt=""></a></div>
-              <div class="swiper-slide"><a href="#"></a><img src="images/banner4.png" alt=""></a></div>
-              <div class="swiper-slide"><a href="#"></a><img src="images/banner5.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://handscoffee.com/new_hands////board/new_board.php?bo_table=new_event&wr_id=247"><img src="images/banner img (1).png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://handscoffeemall.com/mall_new/shop/item.info.php?it_id=17168693129500"><img src="images/banner2.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://handscoffee.com/new_hands/board/new_board.php?bo_table=sharing_news&wr_id=1005"><img src="images/banner3.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://handscoffee.com/new_hands/menu/sub2.php"><img src="images/banner4.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://handscoffeeessay.stibee.com/"><img src="images/banner5.png" alt=""></a></div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -239,9 +193,11 @@ background-color: #fdd862;
          <div class="swiper sw-signature">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
+    
               <a href="#" class="sig">
                 <img src="images/longblack.png" alt="롱블랙">
               </a>
+           
             </div>
             <div class="swiper-slide">
               <a href="#" class="sig">
@@ -292,7 +248,7 @@ background-color: #fdd862;
         <button class="sw-bt sw-prev">이전</button>
         <button class="sw-bt sw-next">다음</button>
 
-          <!-- 시그니쳐 이미지 스와이퍼 -->
+          <!-- 푸드 이미지 스와이퍼 -->
           <div class="swiper sw-food">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -344,37 +300,19 @@ background-color: #fdd862;
           <div class="newhandstxt">
             <h1 class="newh1">NEW HANDS</h1>
             <h3 class="newh3">새로운 핸즈커피 매장을 만나보세요.</h3>
-            <span>MORE</span>
+            <a href="https://handscoffee.com/new_hands/store/sub1-1.php"><span>MORE</span></a>
           </div>
         </div>
         <!-- 뉴핸즈 이미지 -->
-        <div class="newhandsright">
-          <ul class="newhandsimg">
-        <div class="apsan-img">
-            <li>
-              <a href="#" id="apsan">
-                <img src="images/apsan 1.png" alt="" /></a>
-            </li>
-          </div>
-          <div class="apsan-txt">
-            <span>앞산점</span>
-          </div>
-            <li>
-              <a href="#" id="art"><img src="images/art 1.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" id="archin"><img src="images/archin 1.png" alt="" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        
 <!-- 카피 -->
 <!-- 앞산 -->
- <div class="newhandswrap">
+ <div class="newhandswrap2">
 <div class="imgwrap">
   <div class="apsan-img">
     <li>
-      <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+      <a href="https://handscoffee.com/new_hands/board/new_board.php?bo_table=sharing_news&wr_id=971" target="_blank"><img src="images/apsan 1.png" alt="" /></a>
+      <div class="nhtxt"><span>CLASSIC</span></div>
     </li>
   </div>
   <div class="txtwrap">
@@ -386,7 +324,8 @@ background-color: #fdd862;
 <div class="imgwrap2">
     <div class="art-img">
       <li>
-        <a href="#"><img src="images/art 1.png" alt="" /></a>
+        <a href="https://handscoffee.com/new_hands/board/new_board.php?bo_table=sharing_news&wr_id=975" target="_blank"><img src="images/art 1.png" alt="" /></a>
+        <div class="nhtxt"><span>FLAGSHIP STORE</span></div>
       </li>
     </div>
     <div class="txtwrap2">
@@ -396,15 +335,18 @@ background-color: #fdd862;
 
   <!-- 아친 -->
   <div class="imgwrap3">
-    <div class="apsan-img">
+    <div class="archin-img">
       <li>
-        <a href="#"><img src="images/apsan 1.png" alt="" /></a>
+        <a href="https://handscoffee.com/new_hands/board/new_board.php?bo_table=sharing_news&wr_id=957" target="_blank"><img src="images/archin 1.png" alt="" /></a>
+        <div class="nhtxt"><span>ARCHIN</span></div>
       </li>
     </div>
-    <div class="txtwrap">
+    <div class="txtwrap3">
       <span>남구미IC점</span>
     </div>
   </div>
+  </div>
+</div>
       <!-- 푸터 -->
       <div class="footer">
         <!-- 푸터탑 -->
@@ -418,7 +360,7 @@ background-color: #fdd862;
           </ul>
         </div>
       </div>
-    </div>
+   
       <!-- 푸터하단 -->
       <div class="footerbot">
         <!-- 푸터하단왼쪽 -->
@@ -448,7 +390,7 @@ background-color: #fdd862;
           </ul>
         </div>
       </div>
-    </div>
+    
     </div>
   </body>
 </html>

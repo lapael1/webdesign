@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* 푸드 css */
+.food{
+    padding-bottom: 90px;
+}
 .food_inner {
     position: relative;
     display: block;
@@ -16,12 +19,36 @@
     
     
 }
-.foodtxt{
-}
-.foodwrap{
-}
+
 .food img{
     width: 60%;
     mix-blend-mode: multiply;
-    
+    padding-bottom: 90px;
 }
+.foodi img{
+    transition: all 0.5s linear;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .foodi:hover img{
+  transform: scale(1.05);
+  filter: brightness(0.7);
+  }
+  
+  .seasonimgSlide img{
+    
+    mix-blend-mode: multiply;
+    padding-bottom: 90px;
+}
+.seasonimgSlide img{
+    transition: all 0.5s linear;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .seasonimgSlide li a:hover img{
+  transform: scale(1.05);
+  filter: brightness(0.8);
+  }
+  

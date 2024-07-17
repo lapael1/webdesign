@@ -3,6 +3,9 @@
 @import url("banner.css");
 @import url("signature.css");
 @import url("food.css");
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">);
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +14,45 @@
 }
 a {
   text-decoration: none;
-  
+
 }
+body{
+  font-family: N;
+}
+/* 탑버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 애니메이션 효과 */
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.top-btn {
+  width: 55px;
+  line-height: 55px;
+  border-radius: 0;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+  animation: updown 1.5s infinite;
+  }
+
 
 /* 공통클래스 */
 .wrap {
@@ -83,13 +123,18 @@ color: #9b0505;
 
 
 /* 네비게이션 */
+.nav>.topmenu>.top-bt{
+  font-weight: 600;
+}
 .submenu{
   display: none;
+  font-weight: 400;
 }
 .nav {
   background-color: #f8e096;
   max-width: 1920px;
   width: 100%;
+  
 }
 .nav ul{
   list-style: none;
@@ -109,7 +154,8 @@ padding-left: 100px;
 font-size: 14px;
 }
 
-nav > ul > li > a{font-size: 18px;font-weight: 500;padding:10px 0;margin-top:;}
+
+nav > ul > li > a{font-size: 18px;font-weight: 600;padding:10px 0;margin-top:;}
 nav > ul > li > a:hover{color:#9b0505;}
 nav > ul > li > ul{display: none; position: absolute; top:-0% left: -0%; transform: translate(-25%,5.5%);background:#f8e096;
 width : 100%;}
@@ -250,7 +296,10 @@ nav > ul > li > li + li{margin-top:5px;}
 }
 .seasonimg img{
   width: 80%;
+  
+  margin-right: 20px;
 }
+
 /*푸드메뉴 */
 
 /* 뉴핸즈 */
@@ -293,27 +342,7 @@ nav > ul > li > li + li{margin-top:5px;}
   padding: 10px;
   position: relative;
 }
-.newhandsright .newhandsimg li:first-child::before {
-  content: "CLASSIC";
-  position: absolute;
-  bottom: -20px;
-  left: 10px;
-  color: #575757;
-}
-.newhandsright .newhandsimg li:nth-child(2)::before {
-  content: "FLAGSHIP STORE";
-  position: absolute;
-  bottom: -20px;
-  left: 24.8%;
-  color: #575757;
-}
-.newhandsright .newhandsimg li:last-child::before {
-  content: "ARCHIN";
-  position: absolute;
-  bottom: -20px;
-  left: 48.5%;
-  color: #575757;
-}
+
 
 /* 푸터 */
 .footer {
@@ -343,6 +372,7 @@ nav > ul > li > li + li{margin-top:5px;}
 /* 푸터하단 */
 .footerbot {
   background-color: #726357;
+  font-weight: 500;
   width: 1920px;
   width: 100%;
   height: 200px;
@@ -385,6 +415,9 @@ nav > ul > li > li + li{margin-top:5px;}
 }
 
 /* 뉴핸즈 */
+.newhandswrap{
+  margin-top: 300px
+}
 .newhandsimg li a{
   position: relative;
   display: block;
@@ -436,7 +469,7 @@ filter: brightness(0.5);
   width: 100%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 54%;
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
 }
@@ -451,7 +484,7 @@ filter: brightness(0.5);
 filter: brightness(0.5);
 }
 .imgwrap:hover img {
- ;
+ 
   transition: all 0.5s ease;
  
   cursor: pointer;}
@@ -461,3 +494,99 @@ filter: brightness(0.5);
   transition: all 0.5s ease;
 }
 
+/* 대구미술관점 */
+.imgwrap2 {
+  transition: opacity 0.5s;
+  position: relative;
+  margin: 0;
+  max-width: 20%;
+}
+.imgwrap2 img {
+  width: 100%;
+}
+.imgwrap2 .txtwrap2 {
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+.imgwrap2 .art-img{
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  overflow: hidden;
+  
+}
+.imgwrap2:hover .art-img {
+  transform: scale(0.97);
+filter: brightness(0.5);
+}
+.imgwrap2:hover img {
+ 
+  transition: all 0.5s ease;
+ 
+  cursor: pointer;}
+  .imgwrap2:hover .txtwrap2 {
+    
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+/* 남구미 */
+.imgwrap3 {
+  transition: opacity 0.5s;
+  position: relative;
+  margin: 0;
+  max-width: 20%;
+}
+.imgwrap3 img {
+  width: 100%;
+}
+.imgwrap3 .txtwrap3 {
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+.imgwrap3 .archin-img{
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  overflow: hidden;
+  
+}
+.imgwrap3:hover .archin-img {
+  transform: scale(0.97);
+filter: brightness(0.5);
+}
+.imgwrap3:hover img {
+ 
+  transition: all 0.5s ease;
+ 
+  cursor: pointer;}
+  .imgwrap3:hover .txtwrap3 {
+    
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.newhandswrap2{
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.newhandswrap2 li a{
+  padding-left: 20px;
+}
+.nhtxt{
+  padding-left: 20px;
+}

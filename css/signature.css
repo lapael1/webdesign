@@ -19,6 +19,22 @@
 
 .sig img{
     width: 60%;
-    mix-blend-mode: multiply;
-    padding-left: px;
+    
+    
 }
+.sig :hover{
+   
+}
+.sig img{
+    transition: all 0.5s linear;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .sig:hover img{
+  
+  transform: scale(1.05);
+  filter: brightness(0.70);
+  }
+  
+  
