@@ -18,13 +18,9 @@
 }
 
 .sig img{
-    width: 60%;
-    
-    
+    width: 60%; 
 }
-.sig :hover{
-   
-}
+
 .sig img{
     transition: all 0.5s linear;
     overflow: hidden;

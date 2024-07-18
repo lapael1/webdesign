@@ -3,8 +3,7 @@
 @import url("banner.css");
 @import url("signature.css");
 @import url("food.css");
-@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">);
-
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css"rel="stylesheet">);
 
 * {
   margin: 0;
@@ -14,21 +13,26 @@
 }
 a {
   text-decoration: none;
-
 }
-body{
+body {
   font-family: N;
 }
 /* 탑버튼 */
 .top-button {
   position: fixed;
-  right: 30px;
-  bottom: 60px;
+  right: 80px;
+  bottom: 80px;
   z-index: 99999;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.top-btn img {
+  transform: rotate(180deg);
+}
+.top-btn img.up {
+  transform: rotate(0deg);
 }
 
 /* 애니메이션 효과 */
@@ -51,8 +55,7 @@ body{
   text-align: center;
   box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
   animation: updown 1.5s infinite;
-  }
-
+}
 
 /* 공통클래스 */
 .wrap {
@@ -68,19 +71,26 @@ body{
   height: 100%;
   /* background-color: aqua; */
 }
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .header-inner {
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
 }
 /* 상단왼쪽 */
-.eng{
+.eng {
   text-decoration: none;
   color: #939293;
   font-weight: 700;
 }
-.eng:hover{
-color: #9b0505;
+.eng:hover {
+  color: #9b0505;
 }
 
 .topLeft .language {
@@ -100,7 +110,7 @@ color: #9b0505;
   color: #5e5e5e;
   text-decoration: none;
 }
-.login li a:first-child:hover{
+.login li a:first-child:hover {
   color: #9b0505;
 }
 /* 로고 */
@@ -121,12 +131,12 @@ color: #9b0505;
   font-weight: 700;
 }
 
-
 /* 네비게이션 */
-.nav>.topmenu>.top-bt{
+
+.nav > .topmenu > .top-bt {
   font-weight: 600;
 }
-.submenu{
+.submenu {
   display: none;
   font-weight: 400;
 }
@@ -134,35 +144,61 @@ color: #9b0505;
   background-color: #f8e096;
   max-width: 1920px;
   width: 100%;
-  
 }
-.nav ul{
+.nav ul {
   list-style: none;
   z-index: 2;
 }
-.nav a{
+.nav a {
   color: #866037;
   text-decoration: none;
 }
-.nav > ul{
-display: flex; width: 100%;
-justify-content: center;
-padding: 10px;
+.nav > ul {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  padding: 10px;
 }
-.nav > ul > li{position: relative;
-padding-left: 100px;
-font-size: 14px;
+.nav > ul > li {
+  position: relative;
+  /* padding-left: 100px; */
+  font-size: 14px;
 }
-
-
-nav > ul > li > a{font-size: 18px;font-weight: 600;padding:10px 0;margin-top:;}
-nav > ul > li > a:hover{color:#9b0505;}
-nav > ul > li > ul{display: none; position: absolute; top:-0% left: -0%; transform: translate(-25%,5.5%);background:#f8e096;
-width : 100%;}
-nav > ul > li:hover ul{display:block;}
-nav > ul > li  li a{display: block; text-align: left;;padding:10px;margin-top: 10px;}
-nav > ul > li  li a:hover{background:#f8e096;color:#5e3819;font-weight: 600;}
-nav > ul > li > li + li{margin-top:5px;}
+nav > ul > li > a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+nav > ul > li > a:hover {
+  color: #9b0505;
+}
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: -0%;
+  left: -0%;
+  transform: translate(-25%, 5.5%);
+  background: #f8e096;
+  width: 100%;
+}
+nav > ul > li:hover ul {
+  display: block;
+}
+nav > ul > li li a {
+  display: block;
+  text-align: left;
+  padding: 10px;
+  margin-top: 10px;
+}
+nav > ul > li li a:hover {
+  background: #f8e096;
+  color: #5e3819;
+  font-weight: 600;
+}
+nav > ul > li > li + li {
+  margin-top: 5px;
+}
 /* 배너구역 */
 .banner {
   position: relative;
@@ -186,31 +222,31 @@ nav > ul > li > li + li{margin-top:5px;}
 /* 공통구역 */
 /* 공통클래스 */
 .inner {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    /* background-color: aquamarine; */
-  }
-  /* section 공동클래스*/
-  .wrap > section {
-    padding: 30px 0 90px 0;
-  }
-  .section-top > h2 {
-    font-size: 28px;
-    line-height: 33px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .section-top > p {
-    font-size: 18px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 0.5);
-  }
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+}
+/* section 공동클래스*/
+.wrap > section {
+  padding: 30px 0 90px 0;
+}
+.section-top > h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-top > p {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* 네비게이션 */
-/* * 스와이퍼 네비게이션 버튼 */ 
+/* * 스와이퍼 네비게이션 버튼 */
 .sw-bt {
   width: 50px;
   height: 50px;
@@ -236,21 +272,19 @@ nav > ul > li > li + li{margin-top:5px;}
 }
 .sw-prev {
   position: absolute;
-  top: 44%;
+  top: 36%;
   left: -155px;
   transform: translate(-50%, -50%);
   z-index: 99;
 }
 .sw-next {
   position: absolute;
-  top: 44%;
+  top: 36%;
   right: -144px;
   transform: translate(50%, -50%);
   z-index: 99;
 }
 /* 시그니처 이미지 슬라이드 */
-
-
 
 /* 시그니처 메뉴 */
 
@@ -291,20 +325,17 @@ nav > ul > li > li + li{margin-top:5px;}
 .foodimgSlide li a {
   padding: 30px;
 }
-.seasonimgSlide li a {
-  
-}
-.seasonimg img{
-  width: 80%;
-  
-  margin-right: 20px;
+
+.seasonimg img {
+  width: 100%;
+  padding-left: 30px;
 }
 
 /*푸드메뉴 */
 
 /* 뉴핸즈 */
 .newhandswrap {
-  max-width: 1920px;
+  max-width: 1280px;
   width: 100%;
   margin-top: 100px;
 }
@@ -343,7 +374,6 @@ nav > ul > li > li + li{margin-top:5px;}
   position: relative;
 }
 
-
 /* 푸터 */
 .footer {
   position: relative;
@@ -357,68 +387,71 @@ nav > ul > li > li + li{margin-top:5px;}
   background-color: #fff7e0;
 }
 .footer_topbar {
+  margin: auto;
   display: flex;
-  justify-content: center;
-  padding: 20px;
+  width: 80%;
+  justify-content: space-around;
+  padding: 10px;
+
 }
 .footer_topbar li a {
-  padding: 0px 40px;
+  padding: 0px 0px;
   color: #5e3819;
   font-size: 16px;
+  
 }
-.footer_topbar li a:hover{
+.footer_topbar li a:hover {
   font-weight: 600;
 }
 /* 푸터하단 */
 .footerbot {
   background-color: #726357;
-  font-weight: 500;
-  width: 1920px;
+  position: relative;
+  display: block;
   width: 100%;
-  height: 200px;
 }
 .footerLeft {
-  width: 900px;
-  float: left;
-  margin-top: 20px;
+  
+  
 }
-.footerLeft .info{
+
+
+.footerLeft .info {
   font-size: 12px;
   line-height: 18px;
   padding: 0px 30px;
   margin-left: 200px;
   padding-top: 50px;
   color: #fff;
+  display: inline-block;
 }
-.copy{
-    color: #fff;
+.copy {
+  color: #fff;
   font-size: 12px;
   margin-left: 200px;
   padding: 0px 30px;
-}
-.footerRight {
-  width: ;
-  height: 100%;
+  display: inline-block;
+
 }
 
-.ftrightimg {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 450px;
+
+.ftrightimg{
   height: 100%;
-  align-items: center;
+display: flex;
 }
+  
+
 .ftrightimg li a {
   padding-left: 20px;
-}
-.ftrightimg li a img {
+  margin-top: 8px;
+ 
 }
 
 /* 뉴핸즈 */
-.newhandswrap{
-  margin-top: 300px
+.newhandswrap {
+  margin-top: 300px;
 }
-.newhandsimg li a{
+.newhandsimg li a {
   position: relative;
   display: block;
   width: 100%;
@@ -426,22 +459,20 @@ nav > ul > li > li + li{margin-top:5px;}
   color: #fff;
   cursor: pointer;
 }
-.newhandsimg li a img:first-child{
+.newhandsimg li a img:first-child {
   transition: all 0.5s linear;
   overflow: hidden;
   filter: brightness(1);
   width: 100%;
-height: 100%;
+  height: 100%;
 }
 
-.newhandsimg li a:hover img:first-child{
-
-transform: scale(0.97);
-filter: brightness(0.5);
+.newhandsimg li a:hover img:first-child {
+  transform: scale(0.97);
+  filter: brightness(0.5);
 }
-.newhandsimg{
+.newhandsimg {
   position: relative;
-  
 }
 
 .newhandsimg {
@@ -473,23 +504,21 @@ filter: brightness(0.5);
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
 }
-.imgwrap .apsan-img{
+.imgwrap .apsan-img {
   opacity: 1;
   transition: all 0.5s ease 0s;
   overflow: hidden;
-  
 }
 .imgwrap:hover .apsan-img {
   transform: scale(0.97);
-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 .imgwrap:hover img {
- 
   transition: all 0.5s ease;
- 
-  cursor: pointer;}
-  .imgwrap:hover .txtwrap {
-    
+
+  cursor: pointer;
+}
+.imgwrap:hover .txtwrap {
   opacity: 1;
   transition: all 0.5s ease;
 }
@@ -516,23 +545,21 @@ filter: brightness(0.5);
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
 }
-.imgwrap2 .art-img{
+.imgwrap2 .art-img {
   opacity: 1;
   transition: all 0.5s ease 0s;
   overflow: hidden;
-  
 }
 .imgwrap2:hover .art-img {
   transform: scale(0.97);
-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 .imgwrap2:hover img {
- 
   transition: all 0.5s ease;
- 
-  cursor: pointer;}
-  .imgwrap2:hover .txtwrap2 {
-    
+
+  cursor: pointer;
+}
+.imgwrap2:hover .txtwrap2 {
   opacity: 1;
   transition: all 0.5s ease;
 }
@@ -559,34 +586,31 @@ filter: brightness(0.5);
   transform: translate(-50%, -50%);
   transition: all 0.5s ease;
 }
-.imgwrap3 .archin-img{
+.imgwrap3 .archin-img {
   opacity: 1;
   transition: all 0.5s ease 0s;
   overflow: hidden;
-  
 }
 .imgwrap3:hover .archin-img {
   transform: scale(0.97);
-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 .imgwrap3:hover img {
- 
   transition: all 0.5s ease;
- 
-  cursor: pointer;}
-  .imgwrap3:hover .txtwrap3 {
-    
+
+  cursor: pointer;
+}
+.imgwrap3:hover .txtwrap3 {
   opacity: 1;
   transition: all 0.5s ease;
 }
-.newhandswrap2{
+.newhandswrap2 {
   display: flex;
   justify-content: flex-start;
- 
 }
-.newhandswrap2 li a{
+.newhandswrap2 li a {
   padding-left: 20px;
 }
-.nhtxt{
+.nhtxt {
   padding-left: 20px;
 }
