@@ -15,6 +15,9 @@ window.onload = function () {
       disableOnInteraction: false,
     },
     breakpoints: {
+      320: {
+        slidesPerView:1,
+      },
       480: {
         slidesPerView: 2,
       },
@@ -38,6 +41,9 @@ window.onload = function () {
       disableOnInteraction: false,
     },
     breakpoints: {
+      320: {
+        slidesPerView:1,
+      },
       480: {
         slidesPerView: 2,
       },

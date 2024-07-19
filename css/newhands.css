@@ -1,1 +1,175 @@
 @charset "utf-8";
+/* 뉴핸즈 */
+.newhandswrap {
+  max-width: 1280px;
+  width: 100%;
+  margin-top: 100px;
+}
+.newhandsleft {
+  float: left;
+}
+.newh1 {
+  margin-top: 0;
+  color: #9b0505;
+}
+.newhandstxt span {
+  display: inline-block;
+  border: 1px solid #aa9980;
+  color: #aa9980;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.newhandstxt span:hover {
+  color: #fff;
+  background-color: #aa9980;
+}
+.newhandstxt {
+  margin-left: 100px;
+  margin-right: 30px;
+}
+.newhandsright {
+  margin-top: 100px;
+}
+.newhandsimg {
+  display: flex;
+  position: relative;
+}
+.newhandsimg li a {
+  padding: 10px;
+  position: relative;
+}
+
+/* 이미지 호버 효과 */
+/* 뉴핸즈 */
+
+  /* 카피 */
+  .imgwrap {
+    transition: opacity 0.5s;
+    position: relative;
+    margin: 0;
+  }
+  .imgwrap img {
+    width: 100%;
+  }
+  .imgwrap .txtwrap {
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+  .imgwrap .apsan-img {
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+  }
+  .imgwrap:hover .apsan-img {
+    transform: scale(0.97);
+    filter: brightness(0.5);
+  }
+  .imgwrap:hover img {
+    transition: all 0.5s ease;
+  
+    cursor: pointer;
+  }
+  .imgwrap:hover .txtwrap {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  /* 대구미술관점 */
+  .imgwrap2 {
+    transition: opacity 0.5s;
+    position: relative;
+    margin: 0;
+  }
+  .imgwrap2 img {
+    width: 100%;
+  }
+  .imgwrap2 .txtwrap2 {
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+  .imgwrap2 .art-img {
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+  }
+  .imgwrap2:hover .art-img {
+    transform: scale(0.97);
+    filter: brightness(0.5);
+  }
+  .imgwrap2:hover img {
+    transition: all 0.5s ease;
+  
+    cursor: pointer;
+  }
+  .imgwrap2:hover .txtwrap2 {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  /* 남구미 */
+  .imgwrap3 {
+    transition: opacity 0.5s;
+    position: relative;
+    margin: 0;
+  }
+  .imgwrap3 img {
+    width: 100%;
+  }
+  .imgwrap3 .txtwrap3 {
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+  .imgwrap3 .archin-img {
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+  }
+  .imgwrap3:hover .archin-img {
+    transform: scale(0.97);
+    filter: brightness(0.5);
+  }
+  .imgwrap3:hover img {
+    transition: all 0.5s ease;
+  
+    cursor: pointer;
+  }
+  .imgwrap3:hover .txtwrap3 {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .newhandswrap2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .newhandswrap2 li a {
+    padding-left: 20px;
+  }
+  .nhtxt {
+    padding-left: 20px;
+  }
+  
