@@ -68,6 +68,38 @@
         height: 10px;
         background-color: #fdd862;
       }
+      @media screen and (max-width:1024px) {
+        .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: #ffffff;
+  }
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background-color: #fdd862;
+  }
+}
+@media screen and (max-width:768px){
+    .inner{
+        max-width: 320px;
+    }
+    .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: #ffffff;
+  }
+  .swiper-pagination-bullet-active {
+    width: 5px;
+    height: 5px;
+    background-color: #fdd862;
+  }
+}
+      
     </style>
   </head>
   <body>
@@ -88,6 +120,9 @@
               </li>
               <li><a href="#" class="eng">ENG</a></li>
             </ul>
+            <a href="#" class="menu-icon">
+              <img src="images/icon_menu (2).png" alt="햄버거바" />
+            </a>
           </div>
           <!-- 로고 -->
           <div class="toplogo">
@@ -163,6 +198,7 @@
       </header>
       <!-- Swiper -->
       <!-- 배너 구역 -->
+       <div class="bannerwrap">
       <div class="swiper bannerSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -183,9 +219,10 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+    </div>
       <!-- pagination -->
-      <div class="sw-promotion-control">
-        <div class="pagination sw-promotion-pg"></div>
+      <div class="sw-banner-control">
+        <div class="pagination sw-banner-pg"></div>
       </div>
 
       <!-- 시그니처 메뉴 -->
@@ -283,10 +320,15 @@
           </div>
         </div>
       </section>
-
+<!-- 시즌 메뉴 텍스트 -->
+<div class="sigtxt">
+  <h1 class="sig">SEASON MENU</h1>
+  <h3 class="sig2">지금 꼭 즐겨야 하는 핸즈 시즌 메뉴</h3>
+</div>
       <!-- 시즌 메뉴 이미지 -->
       <section class="seasonimg">
         <div class="inner">
+          
           <ul class="seasonimgSlide">
             <li>
               <a href="#"><img src="images/peachsummer.png" alt="" /></a>
@@ -307,9 +349,8 @@
             <a href="https://handscoffee.com/new_hands/store/sub1-1.php"><span>MORE</span></a>
           </div>
         </div>
-        <!-- 뉴핸즈 이미지 -->
       </div>
-      <!-- 카피 -->
+      <!-- 뉴핸즈 이미지 -->
       <!-- 앞산 -->
       <div class="newhandswrap2">
         <div class="imgwrap">
@@ -322,6 +363,7 @@
           <div class="txtwrap">
             <span>앞산점</span>
           </div>
+        </div>
 
           <!-- 아트 -->
           <div class="imgwrap2">
@@ -348,7 +390,6 @@
               <span>남구미IC점</span>
             </div>
           </div>
-        </div>
       </div>
       <!-- 푸터 -->
       <div class="footer">
@@ -369,30 +410,32 @@
         <!-- 푸터하단왼쪽 -->
          <div class="inner">
         <div class="footerLeft">
-          <ul class="ftrightimg">
-            <li>
-              <a href="https://www.youtube.com/channel/UCycHJe6mK-yoWzTEDOndOPQ" target="_blank"><img src="images/handsutubeicon.png" alt="유튜브" /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/handscoffee/" target="_blank"><img src="images/handsinstaicon.png" alt="인스타" /></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/handscoffee" target="_blank"><img src="images/handsfaceicon.png" alt="페이스북" /></a>
-            </li>
-            <li>
-              <a href="https://handscoffeemall.com/mall_new/" target="_blank"><img src="images/handsmallicon.png" alt="핸즈몰" /></a>
-            </li>
-          </ul>
+          <div class="footertxt">
           <p class="info">
             상호명 : (주)지핸즈 | 주소 : 대구광역시 북구 도남길 61-9<br />
             고객 문의 : 1600-3476 대표 메일 : MASTER@HANDSCOFEE.COM
           </p>
           <br />
           <p class="copy">COPYRIGHTⓒ 2006 g hands Co., ltd. All Rights Reserved.</p>
-          
+        </div>
         </div>
         <!-- 푸터하단오른쪽 -->
-          
+          <div class="footerRight">
+            <ul class="ftrightimg">
+              <li>
+                <a href="https://www.youtube.com/channel/UCycHJe6mK-yoWzTEDOndOPQ" target="_blank"><img src="images/handsutubeicon.png" alt="유튜브" /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/handscoffee/" target="_blank"><img src="images/handsinstaicon.png" alt="인스타" /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/handscoffee" target="_blank"><img src="images/handsfaceicon.png" alt="페이스북" /></a>
+              </li>
+              <li>
+                <a href="https://handscoffeemall.com/mall_new/" target="_blank"><img src="images/handsmallicon.png" alt="핸즈몰" /></a>
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
   </body>
